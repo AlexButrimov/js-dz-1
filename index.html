@@ -4,18 +4,94 @@
     <meta charset="UTF-8">
     <title>Document</title>
 
-    <script>
+    <!--<script>
         var a = +prompt("Введите температуру в градусах Цельсия");
         var result_farengeit = (9 / 5) * a + 32;
         alert("Температура в градусах Фаренгейта составляет:" + result_farengeit)
     </script>
-    
+
     <script>
       var admin, name;
       name = 'Василий';
       admin = name;
       alert(admin);
-    </script>
+    </script>-->
+
+    <script>
+           // В данном случае речь идет, как я понимаю о префиксной и постфиксной форме записи унарного оператора. То есть ++a говорит о том, что увеличивается на 1 значение операнда; сначала возвращение, а потом уже инкрементирование. В то время как b++ сразу инкрементирование.
+           var a = 1,
+               b = 1,
+               c, d;
+           c = ++a;
+           alert(c); // 2
+           d = b++;
+           alert(d); // 1
+           c = (2 + ++a);
+           alert(c); // 5 ; здесь получается что 2+ это увеличение на одно значение плюс результат ++a
+           d = (2 + b++);
+           alert(d); // 4 ; здесь получается что 2+ это увеличение на одно значение плюс результат b++
+           alert(a); // 3
+           alert(b); // 3
+
+       </script>
+
+       <script>
+           var a = 2;
+           var x = 1 + (a *= 2);
+           alert(x); // 5 присваивание переменой и умножение на два вроде
+
+       </script>
+
+       <script>
+           var a = +prompt("Введите число a");
+           var b = +prompt("Введите число b");
+
+           if (a >= 0, b >= 0) {
+               alert(a - b);
+
+           } else if (a <= 0, b <= 0) {
+               alert(a * b);
+           } else if (a > 0, b < 0) {
+               alert(a + b);
+           } else if (a < 0, b > 0) {
+               alert(a + b);
+           }
+
+       </script>
+
+       <script>
+           var a = Math.random() * 14 + 1;
+           alert(Math.round(a));
+
+       </script>
+
+       <script>
+           var a = +prompt("Введите число a");
+           var b = +prompt("Введите число b");
+
+           alert(a + b);
+
+           function pluse(a, b) {
+
+               return a + b;
+           }
+           alert(a - b);
+
+           function minus(a, b) {
+               return a - b;
+           }
+           alert(a / b);
+
+           function del(a, b) {
+               return a / b;
+           }
+           alert(a * b);
+
+           function umn(a, b) {
+               return a * b;
+           }
+
+       </script>
     
 </head>
 
@@ -23,8 +99,3 @@
 
 </body>
 </html>
-
-
-
-
-
